@@ -1,0 +1,25 @@
+/*------------------------------------------*/
+/*	02 - Elementor Core Changes   
+/*------------------------------------------*/
+
+body.listing_type-template-default .elementor-widget:not(:last-child) {    margin-bottom: 0px !important; }
+
+#map_sidebar .card-ppt-search .p-md-4{padding:20px 10px!important}
+
+@media (min-width:576px){
+.elementor-column section>.container,.elementor-column section>.container-fluid{padding-left:0!important;padding-right:0!important}
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {    padding: 0px !important;}
+.elementor-column-gap-default > .elementor-row>.elementor-column>.elementor-element-populated>.elementor-widget-wrap { padding: 0px !important; }
+
+.ppt-text-link-1{color:#333;font-weight:700;display:inline-block;text-transform:uppercase!important;-webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out}.ppt-text-link-1:hover{color:#333;text-decoration:none}.ppt-text-link-1:hover:after{transform:scale(2,1)}.ppt-text-link-1:after{content:" ";border-top:2px solid #333;width:36px;height:7px;display:inline-block;margin-left:20px;-webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out;transform-origin:top left}
+
+
+.elementor-add-new-section .elementor-add-premiumpress-button span { background-image:url(../images/premiumpress-logo-white.svg);background-repeat:no-repeat;     background-size: contain;    background-position: 0px 0px; 
+width: 40px;    margin-left: 11px; }
+.elementor-add-new-section .elementor-add-premiumpress-button i:before{content:"."}
+.elementor-add-new-section .elementor-add-premiumpress-button i.fa{visibility:hidden}
+
+
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px} 

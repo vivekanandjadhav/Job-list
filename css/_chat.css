@@ -1,0 +1,391 @@
+
+.left {
+     text-align: left;
+}
+ .right {
+     text-align: right;
+}
+
+/*-----------------------------------------------*/
+/*	00 - LEFT PANEL
+/*-----------------------------------------------*/
+
+
+ .infos-header {
+     padding: 0 15px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+     position: sticky;
+     top: 0;
+     color: #4c595f;
+	 background:#f8fafc;
+     z-index: 1;
+     height: 80px;
+     line-height: 70px;
+}
+
+/*-----------------------------------------------*/
+/*	00 - CONTACT LIST
+/*-----------------------------------------------*/
+ 
+ 
+.contact-list .contact {    border-bottom: 1px solid #e1e5e9;}
+.contact-list .contact:hover { cursor:pointer; background:#f1f5f9; }
+.contact-list .contact .d-flex { padding:10px; }
+.contact-list .contact ._name { font-weight:600; font-size:14px; } 
+.contact-list .contact ._desc { font-size:12px; margin-top: 5px;    opacity: 0.5; } 
+.contact-list .contact .ppt-avatar { margin-right:20px; margin-top: 5px; }
+
+
+ .active-contact{
+  
+}
+ .contact-infos {
+     padding-top: 12px;
+     padding-left: 0;
+}
+ 
+ .contact-list {
+     overflow: auto;
+     padding-bottom: 60px;
+	 height:530px;
+}
+ .contact-list::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px transparent;
+     border-radius: 10px;
+     background-color: transparent;
+}
+ .contact-list::-webkit-scrollbar {
+     width: 5px;
+     background-color: transparent;
+}
+ .contact-list::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px transparent;
+     background-color: transparent;
+}
+ 
+/*-----------------------------------------------*/
+/*	00 - CONTACT LIST
+/*-----------------------------------------------*/
+ 
+ 
+ .user-status-discussion {
+     position: absolute;
+     left: 15px;
+     top: 8px;
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     border: 2px solid #ffffff;
+}
+ .discussion {
+     height: 70px;
+}
+ .discussion-infos {
+     padding-top: 12px;
+     padding-left: 0;
+}
+ .discussion img {
+     height: 45px;
+     width: 45px;
+     object-fit: cover;
+     margin-right: 10px;
+     border-right: 2px solid transparent;
+     border-bottom: none !important;
+     cursor: pointer;
+     color: #8A98AC;
+     margin-top: 11px;
+     border-radius: 50%;
+}
+ .discussion h3 {
+     font-size: 15px;
+     margin-bottom: 5px;
+}
+ .discussion h3>span {
+     color: #8A98AC;
+     float: right;
+     font-size: 11px;
+     font-weight: 400;
+     margin-top: 3px;
+}
+ .discussion p {
+     color: #8A98AC;
+     float: left;
+     font-size: 12px;
+     font-weight: 400;
+     margin-top: 3px;
+}
+ .discussion-header {
+     padding: 0 15px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+     position: sticky;
+     top: 0;
+     background:#f8fafc;
+     z-index: 1;
+     height: 80px;
+     border-left:1px solid #ddd;
+	 padding-top:5px;
+	 
+	 
+}
+ .discussion-menu {
+     height: 70px;
+     line-height: 70px;
+}
+ .d-menu {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     text-align: right;
+}
+ .d-menu li {
+     display: inline-flex;
+     text-align: center;
+     height: 60px;
+     margin: 0 6px;
+}
+ .d-menu li:hover i {
+     color: #66bb6a;
+}
+ .d-menu i {
+     margin: auto;
+     color: #4c595f;
+     font-size: 17.5px;
+}
+
+/*-----------------------------------------------*/
+/*	00 - MESSAGE BOX
+/*-----------------------------------------------*/
+
+.discussion-menu-active {     color: #66bb6a;     border-bottom: 3px solid #66bb6a;}
+.discussion-menu-active i {     color: #66bb6a;}
+.discussion-list {   height: 600px;     overflow: auto;     padding: 20px;     overflow-y: scroll;}
+.discussion-message {       border-top: 1px solid #e2e8f0;     border-left: 1px solid #e2e8f0;     bottom : 0;     z-index: 1000;     background-color: #f8fafc;	 padding:20px 30px;}
+.discussion-message input {border:2px solid  #cbd5e1!important; background:#fff!important; border-radius: 20px !important; height:45px;}
+.discussion-message i { color:#64748b; }
+.discussion-message .fa-paperclip { position:absolute; right: 5%; top: 30%; cursor:pointer; width:21px !important; }
+.discussion-message .fa-smile { position: absolute; left: 3%; top: 30%; width:21px !important; }
+
+
+/*-----------------------------------------------*/
+/*	00 - CHAT WINDOW
+/*-----------------------------------------------*/
+ 
+.message-chat-text {
+     background-color: #64748b;
+     color: #fff;
+     padding: 10px;
+     display: inline-block;
+     border-radius: 3px;
+     position: relative;
+     font-size: 14px;
+	 position: relative;
+}
+ 
+.message-chat:not(.message-chat-right, .message-has-icon) .message-chat-text:before {
+	content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -6px;    
+    z-index: 1;
+    top: auto;
+    bottom: 0;
+    border: 6px solid #64748b;
+    border-color: transparent transparent #64748b;
+}
+
+.message-chat.message-chat-right:not(.message-has-icon) .message-chat-text:before {
+	content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right:-6px;    
+    z-index: 1;
+    top: auto;
+    bottom: 0;
+    border: 6px solid #3b82f6;
+    border-color: transparent transparent #3b82f6;
+}  
+
+.message-chat-right .ppt-avatar { float: right;    margin-left: 20px; }
+
+.message-chat-right .message-chat-text {
+     background:#3b82f6;
+     color: #ffffff;
+     text-align: left;
+}
+
+.message-chat-right:after {
+ 
+    border: 6px solid #3b82f6;
+    border-color: transparent transparent #3b82f6;
+} 
+
+
+
+.date-chat {
+     text-align: center;
+     margin-bottom: 15px;
+}
+ .message-chat {
+     margin-bottom: 15px;
+}
+ .message-chat .small img {
+     float:left;
+     max-width:16px;
+     margin-right: 10px;
+}
+ .message-chat-right {
+     text-align: right;
+}
+ .message-chat-right .small img {
+     float:right;
+     max-width: 16px;
+     margin-left: 10px;
+}
+
+ .message-chat-text p {
+     padding:0px;
+     margin:0px;
+}
+
+ .message-chat-text.chaticontxt {
+     background:white !important;
+	 color:#000000 !important;
+}
+ .message-chat-meta {
+     font-size: 11px;
+     color: #8A98AC;
+}
+ .message-chat-meta i {
+     margin-left: 5px;
+}
+ .message-chat-right .message-chat-meta>i {
+     margin-right: 5px;
+}
+
+
+/*-----------------------------------------------*/
+/*	00 - ATTACHMENTS
+/*-----------------------------------------------*/
+  
+.attachment-file { 
+border-radius: 10px;
+    width: 221px;
+    border: 1px solid #eee;
+    padding: 8px 13px;
+}
+.attachment-file:hover { background:#fdfdfd; }
+.attachment-file img { float:left; max-width:62px; margin-right:20px; }
+
+/*-----------------------------------------------*/
+/*	00 - CHAT WINDOW
+/*-----------------------------------------------*/
+ 
+
+ 
+ .message-chat-right .message-chat-text.not(.chaticontxt):after {
+     content: " ";
+     position: absolute;
+     width: 0;
+     height: 0;
+     left: auto;
+     right: -10px;
+     top: auto;
+     bottom: 0;
+     border: 6px solid #66bb6a;
+     border-color: transparent transparent #66bb6a #66bb6a;
+}
+ .message-chat-left .message-chat-text.not(.chaticontxt):after {
+     content: " ";
+     position: absolute;
+     width: 0;
+     height: 0;
+     left: -10px;
+     right: auto;
+     top: auto;
+     bottom: 0;
+     border: 6px solid #efefef;
+     border-color: transparent #efefef #efefef transparent;
+}
+   
+ .discussion-list::-webkit-scrollbar-track, #ajax_chat_list::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: #fff;
+}
+ .discussion-list::-webkit-scrollbar, #ajax_chat_list::-webkit-scrollbar {
+     width: 5px;
+     background-color: #fff;
+}
+ .discussion-list::-webkit-scrollbar-thumb, #ajax_chat_list::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #e5e5e5;
+}
+ 
+ @media screen and (max-width: 767px) {
+    
+     .infos-header{
+         height: 55px !important;
+         line-height: 55px !important;
+    }
+     .wrapper-discussion {
+         z-index: 15 !important;
+         position: fixed !important;
+         background: #fff !important;
+         width: 100% !important;
+         height: 100% !important;
+         top: 0;
+         left: 0px;
+    }
+     .d-message li{
+         width: 8%;
+    }
+     .message-block {
+         width: 72% !important;
+    }
+     .discussion-message {
+         padding: 0 7px;
+         position: fixed !important;
+         bottom: 60px;
+         left:0;
+		 padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    }
+     .discussion-list {
+         height: calc(100vh - 200px);
+         overflow: auto;
+         padding: 30px 41px 60px 41px;
+    }
+     .discussion h3{
+         color: #2a2a2a;
+    } 
+	.discussion-message .fa-smile { left:5%; }
+}
+ .contact-left {
+     flex: 0 0 72px !important;
+     max-width: 72px !important;
+}
+ .contact-infos {
+     flex: 0 0 calc( 100% - 72px ) !important;
+     max-width: calc( 100% - 72px ) !important;
+}
+/* mobile */
+ @media (max-width: 575.98px) {
+     .discussion-header {
+         top:-70px;
+    }
+	.discussion-list { padding:20px; }
+     #accountpage-body .count-numbers {
+         margin-right: 20px;
+         font-size: 20px;
+         font-weight: bold;
+         min-width: 40px;
+    }
+     #accountpage-body .arrowright .fa-chevron-right {
+         font-size:20px;
+    }
+}
